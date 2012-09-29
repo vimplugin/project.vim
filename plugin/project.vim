@@ -959,7 +959,7 @@ function! s:Project(filename) " <<<
                 copen
             endif
         else
-            silent! exec 'silent! vimgrep '.pattern.' '.fnames
+            silent! exec 'silent! vimgrep "'.pattern.'" '.fnames
             copen
         endif
     endfunction ">>>
